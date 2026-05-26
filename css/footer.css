@@ -1,0 +1,12 @@
+/* === Footer === */
+.footer {
+  border-top: 1px solid var(--border-subtle); padding: 40px 0;
+  text-align: center; color: var(--text-tertiary); font-size: 13px;
+}
+.footer a { color: var(--text-secondary); }
+.footer a:hover { color: var(--text-primary); }
+.footer .social-links { display: flex; gap: 20px; justify-content: center; margin-bottom: 16px; }
+.footer .social-links a {
+  color: var(--text-tertiary); font-size: 14px;
+  display: inline-flex; align-items: center; gap: 6px;
+}
