@@ -34,4 +34,5 @@
 @media (max-width: 768px) {
   .nav-inner { flex-wrap: wrap; height: auto; padding: 10px 16px; row-gap: 10px; }
   .nav-links { width: 100%; flex-wrap: wrap; justify-content: center; gap: 12px 18px; }
+  .nav-cta { display: none; }
 }
