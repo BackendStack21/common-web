@@ -7,7 +7,7 @@ Central asset hub for all 21no.de web properties. Served from **assets.21no.de**
 ```
 ├── css/
 │   ├── tokens.css        # Design tokens (CSS variables)
-│   ├── base.css          # Reset, typography, layout
+│   ├── base.css          # Reset, typography, layout, effects, animations
 │   ├── nav.css           # Sticky navigation
 │   ├── hero.css          # Hero section + stats
 │   ├── buttons.css       # .btn, .btn-primary, .btn-secondary
@@ -16,7 +16,7 @@ Central asset hub for all 21no.de web properties. Served from **assets.21no.de**
 │   └── blog-carousel.css # Blog carousel + skeleton
 ├── fonts/
 │   ├── fonts.css         # @font-face declarations
-│   ├── Outfit-*.ttf      # Outfit (300–700)
+│   ├── SpaceGrotesk-Variable.ttf  # Space Grotesk (variable, 300–700)
 │   └── JetBrainsMono-*.ttf  # JetBrains Mono (400–600)
 └── README.md
 ```

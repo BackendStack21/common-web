@@ -10,7 +10,7 @@
 }
 .hero-badge {
   display: inline-flex; align-items: center; gap: 6px;
-  background: var(--accent-subtle); border: 1px solid rgba(56,189,248,0.2);
+  background: var(--accent-subtle); border: 1px solid rgba(34,211,238,0.2);
   color: var(--accent); padding: 4px 14px; border-radius: 999px;
   font-size: 13px; font-weight: 500; margin-bottom: 28px;
 }
