@@ -102,3 +102,23 @@
   html:has(.lab-home) { scroll-behavior: auto; }
   .lab-home *, .lab-home *::before, .lab-home *::after { animation: none !important; transition: none !important; }
 }
+
+/* Optional scrolling news row; other organization pages retain a static strip. */
+.lab-home .news-ticker .events-ticker-inner { padding-block: 6px; gap: 20px; }
+.lab-home .news-ticker .events-track-wrap { overflow: hidden; }
+.lab-home .news-ticker .events-track { position: relative; width: max-content; flex-wrap: nowrap; gap: 28px; }
+.lab-home .news-group { display: flex; align-items: center; gap: 28px; flex-shrink: 0; }
+.lab-home .news-group[hidden] { display: none; }
+.lab-home .news-ticker .events-item { flex-wrap: nowrap; white-space: nowrap; min-height: 36px; }
+.lab-home .news-toggle { flex-shrink: 0; border: 1px solid var(--border-card); border-radius: 4px; padding: 4px 10px; min-height: 36px; color: var(--text-secondary); background: transparent; font: inherit; font-size: 11px; cursor: pointer; }
+.lab-home .news-toggle[hidden] { display: none; }
+.lab-home .news-toggle:hover { color: var(--accent); }
+.lab-home .news-manual .events-track-wrap { overflow-x: auto; }
+.lab-home .news-ticker .events-item:focus-visible { outline-offset: -2px; }
+@media (max-width: 768px) {
+  .lab-home .news-ticker .events-ticker-inner { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 0 12px; }
+  .lab-home .news-ticker .events-label { grid-column: 1; }
+  .lab-home .news-ticker .events-track-wrap { grid-row: 2; grid-column: 1 / -1; }
+  .lab-home .news-toggle { grid-column: 2; grid-row: 1; min-height: 44px; }
+  .lab-home .news-ticker .events-item { min-height: 44px; }
+}
